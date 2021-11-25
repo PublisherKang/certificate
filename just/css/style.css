@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul, li, ol{
+    list-style: none;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: #222328;
+}
+img{vertical-align: top; border: none;}
+
+/* ======================================================= */
+
+#wrap{width: 100%}
+
+#header{width: 100%; z-index: 300   ;}
+.headerIn{width: 1200px; height: 100px; margin: 0 auto; background: rgb(255, 153, 153); position: relative;}
+
+.logo{width: 200px; height: 40px;padding-top: 30px;}
+.logo img{width: 100%; height: auto;}
+
+/* 메인 메뉴 */
+.gnb{width: 704px; height: 40px; position: absolute; top: 40px; left: 470px;}
+.gnb .main_menu{width: 100%; height: 40px; display: flex; justify-content: space-between;}
+
+.gnb .main_menu li{width: 176px; height: 40px; text-align: center; background: #ff0; line-height: 40px; position: relative;}
+
+.gnb .main_menu > li > a::after{content: ""; display: block; width: 100%; height: 4px; background: #aaa; position: absolute; bottom: 0; left: 0; display: none;}
+
+.gnb .main_menu li:hover > a::after{display: block;}
+
+/* 서브 메뉴 */
+.sub_gnb{width: 176px; height: 160px; position: absolute; top: 40px; left: 0; background: #ff0; display: none;}
+.sub_gnb li{width: 140px; height: 40px;}
+.sub_gnb li:hover a{background: #ada;}
+
+
+/* 슬라이드 영역 */
+#mainSlider{width: 1200px; margin: 0 auto; height: 300px; }
+#mainSlider .slideIn{width: 1200px; height: 300px; overflow: hidden;}
+#mainSlider .slideIn h2{display: none;}
+#mainSlider ul{width: 1200px; height: 300px;}
+#mainSlider ul li{width: 1200px; height: 300px;}
+#mainSlider ul li img{width: 100%; height: auto;}
+
+
+#container{width: 1200px; margin: 0 auto; display: flex;}
+section h2{display: none;}
+
+.cont1{width: 500px; height: 200px; position: relative; }
+
+.cont1 .notice{width: 100%; height: 100%; padding: 60px 0 0 30px; box-sizing: border-box;}
+.cont1 .notice > a{position: absolute; top: 16px; left: 50px; width: 100px; height: 30px; background: #ccc; text-align: center; line-height: 30px;}
+.cont1 .notice ul{display: none;}
+.cont1 .notice.active > a{background: rgb(139, 139, 23);}
+.cont1 .notice.active ul{display: block;}
+
+
+.cont1 .notice ul{width: 400px; border: 1px solid #ada; padding: 14px 20px;}
+.cont1 .notice ul li{position: relative; border-bottom: 1px dotted #aaa; padding: 2px 0;}
+.cont1 .notice ul li a{}
+.cont1 .notice ul li .day{position: absolute; top: 0; right: 10px;}
+
+.cont1 .gallery{width: 100%; height: 100%; padding: 50px 0 0 30px; box-sizing: border-box; }
+
+.cont1 .gallery > a{position: absolute; top: 16px; left: 160px; width: 100px; height: 30px; background: #ccc; text-align: center; line-height: 30px;}
+
+.cont1 .gallery.active > a{background: rgb(139, 139, 23);}
+.cont1 .gallery.active ul{display: block;}
+
+
+.cont1 .gallery ul{width: 340px; position: absolute; top: 70px; left: 70px; display: none;}
+.cont1 .gallery ul::after{content: ""; display: block; clear: both;}
+.cont1 .gallery ul li{float: left; margin: 0 10px;}
+
+
+.cont2{width: 350px; height: 200px; padding: 8px;}
+.cont2 .banner img{width: 100%; height: auto; margin-top: 12.5px;}
+
+
+.cont3{width: 350px; height: 200px; padding: 8px;}
+.cont3 .direct img{width: 100%; height: auto; margin-top: 12.5px;}
+
+#footer{width: 1200px; height: 100px; margin: 0 auto; display: flex; background: #dad; position: relative;}
+#footer h3{width: 140px; height: 50px; padding-top: 34px; padding-left: 20px; margin-right: 200px;}
+#footer h3 img{width: 100%; height: auto;}
+
+.copy{margin-top: 40px;}
+.sns{width: 200px; display: flex; justify-content: space-between; position: absolute; top: 20px; right: 30px;}
