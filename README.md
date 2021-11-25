@@ -1,1 +1,1 @@
-# 자격증 연습중입니다.
+# certificate study
