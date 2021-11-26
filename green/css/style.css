@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/* reset */
+
+*{margin: 0; padding: 0; color: #333;}
+img{vertical-align: top; border: none; width: 100%; height: auto;}
+a{text-decoration: none; color: #333;}
+ul, li, ol{list-style: none;}
+
+#wrap{}
+/* header */
+#header{width: 1200px; height: 100px; margin: 0 auto; background: #3cb149; position: relative;  z-index: 300;}
+.logo{width: 200px; height: 40px; padding-top: 30px; padding-left: 10px;}
+.logo img{width: 100%; height: auto;}
+
+/* gnb */
+.gnb{width: 800px; height: 60px; position: absolute; top: 40px; left: 400px;}
+.gnb > ul{display: flex; justify-content: space-between;}
+.gnb > ul > li{width: 200px; height: 60px; line-height: 60px; text-align: center; background-color: #ddd; position: relative;}
+.gnb > ul > li a{display: block;}
+.gnb > ul > li:hover > a{background: #d0d; color: #fff;}
+
+.gnb .sub_menu{width: 100%; position: absolute; top: 60px; left: 0; background: #ff0; display: none; z-index: 1;}
+
+.gnb .sub_menu li:hover a{background: #d0d; color: #fff}
+
+.gnb_bg{width: 1200px; height: 180px; position: absolute; top: 100px; left: 0; background: #ff0; display: none;}
+
+#mainSlider{width: 1200px; margin: 0 auto; overflow: hidden;}
+#mainSlider ul{width: 3600px; height: 300px; display: flex;}
+#mainSlider ul li{width: 1200px; height: 300px; position: relative;}
+#mainSlider ul li span{background: rgba(255, 255, 255, .8); padding: 10px 20px; border-radius: 20px; position: absolute; bottom: 50px; left: 50px;}
+
+
+#container{width: 1200px; margin: 0 auto; display: flex; background: #1d8844;}
+
+#container .notice{width: 360px; height: 200px; background: #434748;}
+#container .notice h2{margin-top: 10px; margin-left: 10px; color: #fff;}
+#container .notice ul{margin-top: 8px; margin-left: 10px;}
+#container .notice ul li{border-bottom: 1px dotted #fff;}
+#container .notice ul li a{display: block; padding: 6px 0; margin-right: 10px; color: #fff}
+#container .notice ul li a span{color: #fff;}
+#container .notice ul li:hover a{background: #ff0;}
+#container .notice ul li:hover a span{color: #333;}
+#container .notice ul li span:nth-of-type(1){margin-right: 60px;}
+
+/* gallery */
+#container .gallery{width: 500px; height: 200px;}
+#container .gallery h2{margin-top: 10px; margin-left: 10px; color: #fff;}
+#container .gallery ul{width: 460px; display: flex; margin: 8px auto 0; justify-content: space-around;}
+#container .gallery ul li{width: 134px; height: 100px;}
+
+/* banner */
+#container .banner{width: 340px;}
+#container .banner h2{margin-top: 10px; margin-left: 10px; color: #fff;}
+#container .banner p{width: 270px; margin: 8px auto;}
+
+/* footer */
+#footer{width: 1200px; height: 100px; margin: 0 auto; background: #ccc; position: relative;}
+#footer .flogo{width: 200px; height: 40px; padding-top: 30px; margin-left: 20px;}
+#footer .copy{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+#footer .family{position: absolute; top: 50%; right: 100px; transform: translateY(-50%);}
+
+#popup{width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: rgba(0, 0, 0, 0.7); z-index: 400; display: none;}
+
+#popup .popIn{width: 500px; height: 500px; background: #fff; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+#popup .popIn h4{text-align: center; font-size: 24px; padding: 20px;}
+#popup .popIn p{padding: 30px 80px 0 80px;}
+#popup .popIn button{position: absolute; bottom: 30px; right: 30px; padding: 6px 20px;}
